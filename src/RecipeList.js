@@ -15,12 +15,12 @@ function RecipeList() {
       <table style={{ width: "100%" }}>
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Cuisine</th>
-            <th>Photo</th>
-            <th>Ingredients</th>
-            <th>Preparation</th>
-            <th>Actions</th>
+            <th style={{ width: "16.67%" }}>Name </th>
+            <th style={{ width: "16.67%" }}>Cuisine</th>
+            <th style={{ width: "16.67%" }}>Photo</th>
+            <th style={{ width: "16.67%" }}>Ingredients</th>
+            <th style={{ width: "16.67%" }}>Preparation</th>
+            <th style={{ width: "16.67%" }}>Actions</th>
           </tr>
         </thead>
         <tbody>
