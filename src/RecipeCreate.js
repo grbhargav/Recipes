@@ -63,54 +63,66 @@ function RecipeCreate() {
 
   return (
     <form name="create" onSubmit={handleSubmit}>
-      <div style={{ display: "flex", flexDirection: "row", gap: "60px" }}>
-        <input
-          style={{ width: "20%" }}
-          type="text" // Use type="text" for single-line input
-          placeholder="name"
-          name="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-        />
+      <table style={{ width: "100%" }}>
+        <td style={{ width: "16.67%" }}>
+          <input
+            type="text" // Use type="text" for single-line input
+            placeholder="name"
+            name="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+        </td>
 
-        <input
-          style={{ width: "20%" }}
-          placeholder="Cuisine"
-          name="cuisine"
-          value={cuisine}
-          onChange={(e) => setCuisine(e.target.value)}
-          required
-        />
+        <td style={{ width: "16.67%" }}>
+          {" "}
+          <input
+            placeholder="Cuisine"
+            name="cuisine"
+            value={cuisine}
+            onChange={(e) => setCuisine(e.target.value)}
+            required
+          />{" "}
+        </td>
 
-        <input
-          style={{ width: "20%" }}
-          placeholder="photo"
-          name="photo"
-          value={photo}
-          onChange={(e) => setPhoto(e.target.value)}
-        />
+        <td style={{ width: "16.67%" }}>
+          {" "}
+          <input
+            placeholder="photo"
+            name="photo"
+            value={photo}
+            onChange={(e) => setPhoto(e.target.value)}
+          />{" "}
+        </td>
 
-        <textarea
-          style={{ width: "20%" }}
-          placeholder="Ingredients"
-          name="ingredients"
-          value={ingredients}
-          onChange={(e) => setIngredients(e.target.value)}
-          required
-        ></textarea>
+        <td style={{ width: "16.67%" }}>
+          {" "}
+          <textarea
+            placeholder="Ingredients"
+            name="ingredients"
+            value={ingredients}
+            onChange={(e) => setIngredients(e.target.value)}
+            required
+          ></textarea>{" "}
+        </td>
 
-        <textarea
-          style={{ width: "20%" }}
-          placeholder="Preparation"
-          name="preparation"
-          value={preparation}
-          onChange={(e) => setPreparation(e.target.value)}
-          required
-        ></textarea>
+        <td style={{ width: "16.67%" }}>
+          {" "}
+          <textarea
+            placeholder="Preparation"
+            name="preparation"
+            value={preparation}
+            onChange={(e) => setPreparation(e.target.value)}
+            required
+          ></textarea>{" "}
+        </td>
 
-        <button type="submit">Create</button>
-      </div>
+        <td style={{ width: "16.67%" }}>
+          {" "}
+          <button type="submit">Create</button>{" "}
+        </td>
+      </table>
     </form>
   );
 }
